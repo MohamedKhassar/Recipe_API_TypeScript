@@ -7,7 +7,7 @@ import "../DB/Connection"
 dotenv.config()
 
 // define the port to run the server on, or default to 8080
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT!
 
 // create an instance of the express application
 const app = express()

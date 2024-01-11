@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 dotenv.config();
 
 // Get the MongoDB connection string from the environment variables
-const DB = process.env.DB || "";
+const DB = process.env.DB!;
 
 // Connect to the MongoDB database
 mongoose.connect(DB);
